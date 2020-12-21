@@ -16,7 +16,7 @@
             <td><a href="{{ monster.wiki_url }}" target="_blank">{{ monster.name }}</a></td>
             <td>{{ monster.combat_level }}</td>
             <td>{{ drop.quantity }}</td>
-            <td>{{ drop.rarity }}</td>
+            <td>{{ drop.rarity | times: 100}}%</td>
             <td>{{ drop.noted }}</td>
         </tr>
         {% endfor %}

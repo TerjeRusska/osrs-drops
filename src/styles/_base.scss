@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: url('../img/Inventory_tab.png') no-repeat !important;
     background-size:100% 100% !important;
+    min-height: 100vh;
 }
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
