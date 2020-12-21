@@ -1,7 +1,7 @@
 <div id="items">
     {% for item in site.item %}
     <div>
-        <a href="{{ item.url }}">
+        <a href="{{ item.url | absolute_url }}">
             {{ item.name }}
         </a>
     </div>
