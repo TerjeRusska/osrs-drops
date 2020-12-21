@@ -2,6 +2,7 @@
     <table id="dropTable" class="display">
         <thead style="color: yellow">
         <tr>
+            <th></th>
             <th>Name</th>
             <th>Level</th>
             <th>Quantity</th>
@@ -13,6 +14,7 @@
         {% for monster in page.monsters %}
         {% for drop in monster.drops %}
         <tr>
+            <td><img src="{{ monster.image }}" alt="" style="width: 50px; height: auto"></td>
             <td><a href="{{ monster.wiki_url }}" target="_blank">{{ monster.name }}</a></td>
             <td>{{ monster.combat_level }}</td>
             <td>{{ drop.quantity }}</td>
