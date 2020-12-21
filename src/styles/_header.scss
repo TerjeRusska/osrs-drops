@@ -3,8 +3,8 @@
   vertical-align: bottom;
   width: 100%;
   min-height: 50vh;
-  background: url('/assets/img/pexels-juan-733475.jpg') no-repeat;
-  background-size: cover;
+  background: url('/assets/img/Chat Interface.png') no-repeat;
+  background-size:100% 100%;
   .particles-js-canvas-el {
     width:100% !important;
     height:50vh !important;
@@ -53,6 +53,13 @@
     @media only screen and (min-width:$cut){
       font-size: 20px;
     }
+  }
+}
+
+.item-img {
+  height: 50px;
+  @media only screen and (min-width:$cut){
+    height: 100px;
   }
 }
 

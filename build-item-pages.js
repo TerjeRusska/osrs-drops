@@ -13,6 +13,8 @@ for (let item in items) {
     const data = YAML.stringify(items[item]);
     const content = "---\n" +
         "layout: item\n" +
+        "title: " + items[item].name + "\n" +
+        "item-id: " + items[item].id + "\n" +
         "datatable: true\n" +
         data +
         "---";
