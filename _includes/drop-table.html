@@ -1,51 +1,26 @@
-{% for monster in page.monsters %}
-<div class="mob-card">
-  <div class="contents">
-    <h3> {{ monster.name }} [lvl. {{ monster.combat_level }}]</h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-  </div>
+<div class="drop-table">
+    <table id="dropTable" class="display">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Quantity</th>
+            <th>Rarity</th>
+            <th>Noted</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for monster in page.monsters %}
+        {% for drop in monster.drops %}
+        <tr>
+            <td><a href="{{ monster.wiki_url }}" target="_blank">{{ monster.name }}</a></td>
+            <td>{{ monster.combat_level }}</td>
+            <td>{{ drop.quantity }}</td>
+            <td>{{ drop.rarity }}</td>
+            <td>{{ drop.noted }}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+        </tbody>
+    </table>
 </div>
-{% endfor %}
-
-<table id="sampleTable" class="display">
-  <thead>
-  <tr>
-    <th>Parameter</th>
-    <th>Description</th>
-    <th>Type</th>
-    <th>Default Value</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>Parameter 1</td>
-    <td>Sample description
-    </td>
-    <td>Sample type</td>
-    <td>Sample default value</td>
-  </tr>
-  <tr>
-    <td>Parameter 2</td>
-    <td>Sample description
-    </td>
-    <td>Sample type</td>
-    <td>Sample default value</td>
-  </tr>
-  <tr>
-    <td>Parameter 3</td>
-    <td>Sample description
-    </td>
-    <td>Sample type</td>
-    <td>Sample default value</td>
-  </tr>
-  <tr>
-    <td>Parameter 4</td>
-    <td>Sample description
-    </td>
-    <td>Sample type</td>
-    <td>Sample default value</td>
-  </tr>
-  </tbody>
-</table>

@@ -3,16 +3,18 @@ layout: default
 ---
 
 {% include item-header.html %}
-{% include drop-table.html %}
+<section id="about">
+    {% include drop-table.html %}
+</section>
 {% include footer.html %}
 
 <script>
     $(document).ready(function(){
 
         $('table.display').DataTable( {
-                paging: true,
+                paging: false,
                 stateSave: true,
-                searching: true
+                searching: false
             }
         );
     });
