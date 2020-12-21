@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include item-header.html %}
+{% include drop-table.html %}
+{% include footer.html %}
+
+<script>
+    $(document).ready(function(){
+
+        $('table.display').DataTable( {
+                paging: true,
+                stateSave: true,
+                searching: true
+            }
+        );
+    });
+</script>

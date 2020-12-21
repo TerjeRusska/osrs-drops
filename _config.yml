@@ -1,0 +1,17 @@
+# Site settings
+title: OSRS Drops
+
+# User settings
+project_name: OSRS Drops
+
+collections:
+  item:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude: ['package.json', 'src' , 'node_modules']

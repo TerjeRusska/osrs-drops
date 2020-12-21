@@ -1,0 +1,9 @@
+<div id="items">
+    {% for item in site.item %}
+    <div>
+        <a href="{{ item.url }}">
+            {{ item.name }}
+        </a>
+    </div>
+    {% endfor %}
+</div>
