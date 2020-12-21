@@ -4,8 +4,6 @@ title: OSRS Drops
 # User settings
 project_name: OSRS Drops
 
-url: "https://terjerusska.github.io/osrs-drops"
-
 collections:
   item:
     output: true
