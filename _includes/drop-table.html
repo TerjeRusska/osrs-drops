@@ -7,7 +7,6 @@
             <th>Level</th>
             <th>Quantity</th>
             <th>Rarity</th>
-            <th>Noted</th>
         </tr>
         </thead>
         <tbody>
@@ -19,7 +18,6 @@
             <td>{{ monster.combat_level }}</td>
             <td>{{ drop.quantity }}</td>
             <td>{{ drop.rarity | times: 100}}%</td>
-            <td>{{ drop.noted }}</td>
         </tr>
         {% endfor %}
         {% endfor %}
