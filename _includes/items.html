@@ -1,9 +1,12 @@
 <div id="items">
     {% for item in site.item %}
-    <div>
-        <a href="{{ item.url | absolute_url }}">
-            {{ item.name }}
-        </a>
-    </div>
+    <h3>
+        <div class="drop-item">
+            <img src="../assets/img/items-icons/{{ item.item-id }}.png" alt="">
+            <a href="{{ item.url | absolute_url }}" style="color: yellow">
+                {{ item.name }}
+            </a>
+        </div>
+    </h3>
     {% endfor %}
 </div>

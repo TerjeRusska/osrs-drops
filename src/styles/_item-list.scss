@@ -1,0 +1,13 @@
+#items {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
+.drop-item {
+  display: flex;
+  justify-content: center;
+}
