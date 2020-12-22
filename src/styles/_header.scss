@@ -16,7 +16,7 @@
   text-align: center;
   color:#FFF;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
@@ -57,9 +57,9 @@
 }
 
 .item-img {
-  height: 50px;
+  height: 75px;
   @media only screen and (min-width:$cut){
-    height: 100px;
+    height: 150px;
   }
 }
 
