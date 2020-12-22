@@ -1,0 +1,13 @@
+#drops {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
+.drop-table {
+  text-align: center;
+  margin: 5px auto;
+}

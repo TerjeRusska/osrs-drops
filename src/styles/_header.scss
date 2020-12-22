@@ -1,13 +1,13 @@
-#particles-js {
+#banner {
   display: flex;
   vertical-align: bottom;
   width: 100%;
-  min-height: 50vh;
-  background: url('../img/Chat Interface.png') no-repeat;
-  background-size:100% 100%;
+  min-height: 40vh;
+  background: url('../img/backdrop_745.gif');
+  background-size:100% auto;
   .particles-js-canvas-el {
     width:100% !important;
-    height:50vh !important;
+    height:40vh !important;
   }
 }
 
