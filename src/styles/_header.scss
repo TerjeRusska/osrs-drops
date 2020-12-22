@@ -22,13 +22,12 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    font-size: 50px;
+    font-size: 30px;
     display: block;
-    line-height: 1;
-    color: #FFF;
+    color: #000000;
     @media only screen and (min-width:$cut){
       margin: 0;
-      font-size: 100px;
+      font-size: 70px;
     }
   }
   .site-description {
