@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const YAML = require('json-to-pretty-yaml');
 
-const jsonDataPath = path.join("_data", "monsters-drop-table-f2p.json");
+const jsonDataPath = path.join("_data", "item-drop-table.json");
 const outputFolder = path.join("_item");
 
 const jsonData = fs.readFileSync(jsonDataPath).toString();
