@@ -1,13 +1,13 @@
 <div id="items">
     <div class="drop-item">
-        <table>
-            <th>
+        <div class="row">
+            <div class="col">
                 <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Search for item..">
-            </th>
-            <th>
+            </div>
+            <div class="col">
                 F2P items: <input type="checkbox" id="f2pCheck" onclick="searchItems()">
-            </th>
-        </table>
+            </div>
+        </div>
     </div>
     <ul id="items-search">
         {% for item in site.item %}
